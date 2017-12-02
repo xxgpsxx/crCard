@@ -7,7 +7,7 @@ public class crCardTesting
         ArrayList <Card> deck = new ArrayList<Card>();
         deck.add(new Unit("Golem", 4, 284, 4256, -2, 2.5, false));
         deck.add(new PassiveBuilding("Elixir Pump", 7, 1020, 70, "Elixir"));
-        deck.add(new Unit("Night Witch", 750, 260, 1, -1, 1.0, false));
+        deck.add(new Unit("Night Witch", 1,750, 260, -1, 1.0, false));
         deck.add(new Spell("Lightning", 4, 837, 335, 3.0));
         deck.add(new Unit("Baby Dragon", 4, 1064, 133, 0, 1.6, true));
         deck.add(new Spell("Zap", 9, 159, 64, 2.5));
@@ -23,6 +23,13 @@ public class crCardTesting
         Unit spearGoblin = new Unit("Spear Goblin", 9, 110, 50, 2, 1.1, false);
         spellBait.add(new VariedMultiUnit("Goblin Gang", 3, goblin, 2, spearGoblin));
         System.out.println(spellBait.get(1));
+        spellBait.add(new Spell("Log", 1, 240, 96, 4));
+        spellBait.add(new Spell("Rocket", 7, 1232, 493, 2.0));
+        spellBait.add(new Unit("Knight", 9, 1399, 159, -1, 1.1, false));
+        spellBait.add(new ActiveBuilding("Inferno Tower", 7, 1408, 40, 704, 6.0, 0.4));
+        spellBait.add(new RangedUnit("Ice Spirit", 9, 190, 95, 2, 1.0, false, 2.5));
+        spellBait.add(new Spell("Goblin Barrel", 4, 0, 0, 2.0));
+        print(spellBait);
     }
     public void print(ArrayList <Card> list)
     {
